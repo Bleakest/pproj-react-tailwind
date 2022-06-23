@@ -25,7 +25,7 @@ export default function Page() {
         </div>
         <div className="flex justify-between mx-4 my-12">
           <p>Contacts</p>
-          <p>tg:falsesolution</p>
+          <p>Tg:falsesolution</p>
         </div>
       </div>
     </div>
