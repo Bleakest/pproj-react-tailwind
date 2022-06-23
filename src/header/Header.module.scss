@@ -1,0 +1,11 @@
+.header {
+    @apply flex container mx-auto p-3 max-w-7xl items-center justify-between;
+
+    .logo_title {
+        @apply text-white text-2xl font-semibold mr-7;
+    }
+
+    .input {
+        @apply block outline-none p-2 rounded-lg bg-zinc-700 text-slate-100 font-medium	
+    }
+}
