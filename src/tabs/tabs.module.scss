@@ -1,0 +1,17 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800px;
+  margin: 20px 5px;
+  white-space: nowrap;
+  min-width: 150px;
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.link {
+  @apply rounded-lg hover:bg-slate-500 hover:text-white;
+  padding: 10px 10px;
+  border-radius: 5px;
+}

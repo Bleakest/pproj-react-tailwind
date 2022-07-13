@@ -1,31 +1,59 @@
 import React from "react";
-import Slider from "./Slider";
 import styles from "./Page.module.scss";
-import { Form } from "react-bootstrap";
+import { InfoBtn } from "./info-btn/InfoBtn";
+import { Slider } from "./Slider/Slider";
+
+import me from "./img/me.jpeg";
+import me2 from "./img/me2.jpeg";
+import me3 from "./img/me3.jpeg";
 
 export default function Page() {
   return (
-    <div className="flex w-full">
-      <div className={styles.div}>
-        <Slider />
+    <div className={styles.container}>
+      <div className={styles.img}>
+        <Slider>
+          <div className={styles.item}>
+            <img src={me} />
+          </div>
+          <div className={styles.item}>
+            <img src={me2} />
+          </div>
+          <div className={styles.item}>
+            <img src={me3} />
+          </div>
+        </Slider>
       </div>
-      <div className="p-2 m-3 bg-zinc-800 rounded-md border-2 border-neutral-500 w-full">
-        <div className="flex justify-between align-center">
-          <h1 className="font-bold text-2xl p-3">Дмитрий Колесников</h1>
+      <div className={styles.page}>
+        <div className={styles.page_name}>
+          <h1 className={styles.page_title}>Дмитрий Колесников</h1>
           <p className="text-slate-400 p-3">online</p>
         </div>
-        <Form.Select className="bg-zinc-700 border-none text-white">
-          <option value="1">Working</option>
-          <option value="2">Chill</option>
-          <option value="3">Vacation</option>
-        </Form.Select>
-        <div className="flex justify-between mx-4 my-10">
+        <div className={styles.page_desc}>
           <p>Stack:</p>
-          <p>Html/Css(Sass)/Bootstrap/Tailwind/Js/React</p>
+          <p>Html/Css(Sass)/Js/React</p>
         </div>
-        <div className="flex justify-between mx-4 my-12">
+        <div className={styles.page_desc}>
           <p>Contacts</p>
           <p>Tg:falsesolution</p>
+        </div>
+        <InfoBtn />
+        <div className="flex justify-between border-t-2 m-3">
+          <div className="w-full h-24 text-center">
+            <div className="pt-3 text-xl">9</div>
+            <div>friends</div>
+          </div>
+          <div className="w-full h-24 text-center">
+            <div className="pt-3 text-xl">5</div>
+            <div>followers</div>
+          </div>
+          <div className="w-full h-24 text-center">
+            <div className="pt-3 text-xl">3</div>
+            <div>photo</div>
+          </div>
+          <div className="w-full h-24 text-center">
+            <div className="pt-3 text-xl">2</div>
+            <div>video</div>
+          </div>
         </div>
       </div>
     </div>
