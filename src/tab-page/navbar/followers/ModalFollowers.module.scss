@@ -1,0 +1,17 @@
+.container {
+    @apply fixed z-10 inset-0 w-full h-full bg-zinc-800/75 
+}
+
+.content {
+    @apply bg-neutral-800 w-1/2 mx-96 my-16
+}
+
+.img {
+    @apply h-32 w-32 rounded-full
+}
+
+.img_container {
+    width: 150px;
+    padding: 5px;
+    margin: 15px;
+}

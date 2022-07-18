@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./Page.module.scss";
 import { InfoBtn } from "./info-btn/InfoBtn";
-import { Slider } from "./Slider/Slider";
+import { Slider } from "./slider/Slider";
 
 import me from "./img/me.jpeg";
 import me2 from "./img/me2.jpeg";
 import me3 from "./img/me3.jpeg";
+import Navbar from "./navbar/Navbar";
 
 export default function Page() {
+  
   return (
     <div className={styles.container}>
       <div className={styles.img}>
@@ -37,24 +39,7 @@ export default function Page() {
           <p>Tg:falsesolution</p>
         </div>
         <InfoBtn />
-        <div className="flex justify-between border-t-2 m-3">
-          <div className="w-full h-24 text-center">
-            <div className="pt-3 text-xl">9</div>
-            <div>friends</div>
-          </div>
-          <div className="w-full h-24 text-center">
-            <div className="pt-3 text-xl">5</div>
-            <div>followers</div>
-          </div>
-          <div className="w-full h-24 text-center">
-            <div className="pt-3 text-xl">3</div>
-            <div>photo</div>
-          </div>
-          <div className="w-full h-24 text-center">
-            <div className="pt-3 text-xl">2</div>
-            <div>video</div>
-          </div>
-        </div>
+        <Navbar />
       </div>
     </div>
   );
