@@ -2,7 +2,7 @@ import { useState } from "react";
 import DopInfo from "./DopInfo";
 
 export const InfoBtn = (props) => {
-  const { title = "Show info" } = props;
+  const [title, setTitle] = useState('Show info')
 
   const [isVisible, setVisible] = useState(false);
 
@@ -14,7 +14,7 @@ export const InfoBtn = (props) => {
         onClick={handleVisibility}
         className="text-center mt-10 mx-4 p-3 rounded-md hover:bg-zinc-400"
       >
-        {title}
+         {title}
       </div>
       {isVisible && <DopInfo />}
     </>

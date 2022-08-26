@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./ModalFollowers.module.scss";
-import follower from "./img/1.jpeg";
-import follower2 from "./img/2.jpeg";
-import follower3 from "./img/3.jpeg";
-import follower4 from "./img/4.jpeg";
+import follower from "./img/1.jpg";
+import follower2 from "./img/2.jpg";
+import follower3 from "./img/3.jpg";
+import follower4 from "./img/4.jpg";
 
 const ModalFollowers = ({ isVisible, setVisible }) => {
   return (
@@ -40,7 +40,6 @@ const ModalFollowers = ({ isVisible, setVisible }) => {
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );

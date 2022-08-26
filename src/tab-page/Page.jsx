@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Page.module.scss";
 import { InfoBtn } from "./info-btn/InfoBtn";
-import { Slider } from "./slider/Slider";
+import { Slider } from "./Slider/Slider";
 
 import me from "./img/me.jpeg";
 import me2 from "./img/me2.jpeg";

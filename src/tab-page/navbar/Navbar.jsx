@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import Followers from "./followers/Followers";
+import Friends from "./friends/Friends";
 import Photos from './photo/Photos'
+import Video from "./vkvideo/Video";
 
 
 export default function Navbar() {
@@ -10,14 +12,8 @@ export default function Navbar() {
       <div className="flex justify-between border-t-2 m-3">
         <Photos />
         <Followers />
-        <div className="w-full h-24 text-center">
-          <div className="pt-3 text-xl">6</div>
-          <div>friends</div>
-        </div>
-        <div className="w-full h-24 text-center">
-          <div className="pt-3 text-xl">2</div>
-          <div>video</div>
-        </div>
+        <Friends />
+        <Video />
       </div>
     </div>
   );
